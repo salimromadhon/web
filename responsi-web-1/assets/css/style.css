@@ -2,7 +2,7 @@
   font-family: "Segoe UI", Calibri, Arial, Helvetica, sans-serif;
 }
 body {
-	background-color: #0098DA;
+  background-color: #0098DA;
 }
 
 /* Typography */
@@ -68,6 +68,41 @@ img {max-width: 100%}
   clear: both;
 }
 
+/* Site Menu */
+
+.site-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00AFEF;
+  position : fixed;
+  top: 0;
+  z-index: 999;
+  width : 100%;
+  box-shadow: 0 1px 2px rgba(46,85,163,.4);
+}
+.site-menu ul {
+  list-style: none;
+  padding: 0;
+}
+.site-menu ul li {
+  float: left;
+}
+.site-menu ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.site-menu ul li a:hover {
+  background-color: #0098DA;
+}
+site-menu ul li a.active {
+  background-color: #0098DA;
+}
+
 /* Blocks */
 
 .callout {
@@ -101,34 +136,3 @@ img {max-width: 100%}
 .callout.left:before {
   right: -.75em;
 }
-/* daftar menu */
-.site-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #00AFEF;
-  position : fixed
-  top: 0
-  width : 100%
-}
-
-.menu {
-    float: left;
-}
-
-.menu a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.menu :hover {
-    background-color: #0098DA;
-}
-.active {
-  background-color: #0098DA;
-}
-
