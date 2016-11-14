@@ -4,8 +4,12 @@
 body {
 	background-color: #0098DA;
 }
+
+/* Typography */
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Segoe UI Light", "Calibri Light";
+  font-weight: normal;
 }
 a {
   color: #0081B9;
@@ -15,12 +19,18 @@ a:hover {
   color: #0098DA;
 }
 img {max-width: 100%}
+.dimmer {
+  font-family: "Segoe UI Light", "Calibri Light";
+  font-size: 2em;
+  color: #A9E5FF;
+  margin: 2em 0;
+}
 .main-container, .gw {
   max-width: 800px;
   margin: 0 auto;
 }
 .site-header {
-  margin-top: 5%;
+  margin: 5% auto;
 }
 .site-header img {
   max-width: 300px;
