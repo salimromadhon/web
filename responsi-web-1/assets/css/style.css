@@ -151,6 +151,9 @@ site-menu ul li a.active {
   display: inline;
   margin-right: 2em;
 }
+.site-footer ul li:last-child {
+  margin-right: 0;
+}
 .copyright {
   background-color: black;
   color: white;
