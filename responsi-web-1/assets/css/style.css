@@ -1,1 +1,77 @@
+* {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+body {
+	background-color: #0098DA;
+}
+a {
+  color: #0081B9;
+  text-decoration: none;
+}
+a:hover {
+  color: #0098DA;
+}
+img {max-width: 100%}
+.main-container, .gw {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.site-header {
+  margin-top: 5%;
+}
+.site-header img {
+  max-width: 300px;
+  margin-top: 1.5em;
+  float: left;
+}
+.site-nav {
+  list-style: none;
+  color: white;
+  display: inline-block;
+  padding: 0;
+  border-radius: .5em;
+  overflow: hidden;
+  float: right;
 
+}
+.site-nav li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #0098DA;
+  background-color: rgba(46,85,163,.4);
+}
+.site-nav li:hover {
+  background-color: rgba(46,85,163,.8);
+}
+.site-nav li a {
+  color: white;
+  color: rgba(255,255,255,.6);
+  padding: .5em 1em;
+  display: inline-block;
+}
+.clear {
+  display: block;
+  float: none;
+  clear: both;
+}
+
+/* Blocks */
+
+.callout {
+  background-color: #00AFEF;
+  padding: 2em;
+  margin: 2em 2em 2em 4em;
+  color: white;
+  position: relative;
+}
+.callout:before {
+  background-color: #00AFEF;
+  content: "";
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  top: 1.9em;
+  left: -.75em;
+  transform: rotate(45deg);
+  z-index: -1;
+}
