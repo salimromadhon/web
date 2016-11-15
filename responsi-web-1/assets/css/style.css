@@ -99,7 +99,7 @@ img {max-width: 100%}
 .site-menu ul li a:hover {
   background-color: #0098DA;
 }
-site-menu ul li a.active {
+.site-menu ul li a.active {
   background-color: #0098DA;
 }
 
@@ -159,4 +159,11 @@ site-menu ul li a.active {
   color: white;
   padding: 1em 0;
   text-align: center;
+}
+
+/* Rewrite */
+
+.pure-form input[type="text"] {
+  background-clip: padding-box;
+  border-color: rgba(0,0,0,.2);
 }
