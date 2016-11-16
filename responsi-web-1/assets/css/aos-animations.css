@@ -1,0 +1,25 @@
+[data-aos="skew-left"] {
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+  opacity: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+
+[data-aos="skew-right"] {
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+  opacity: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+[data-aos="skew-left"].aos-animate,
+[data-aos="skew-right"].aos-animate {
+  -webkit-transform: skewX(0);
+          transform: skewX(0);
+  opacity: 1;
+}
