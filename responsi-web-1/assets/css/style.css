@@ -25,18 +25,26 @@ img {max-width: 100%}
   color: #A9E5FF;
   margin: 2em 0;
 }
+.dimmer strong {
+  color: white;
+  font-weight: normal;
+}
 .main-container, .gw {
   max-width: 800px;
   margin: 0 auto;
 }
 .site-header {
   margin: 5% auto;
+  text-align: center;
 }
-.site-header img {
+.site-header .logo {
   max-width: 300px;
-  margin-top: 1.5em;
-  float: left;
 }
+.site-header .slogan {
+  color: #A9E5FF;
+}
+
+/*
 .site-nav {
   list-style: none;
   color: white;
@@ -62,10 +70,20 @@ img {max-width: 100%}
   padding: .5em 1em;
   display: inline-block;
 }
+*/
+
+/* Misc */
+
 .clear {
   display: block;
   float: none;
   clear: both;
+}
+
+.block-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Site Menu */
@@ -78,13 +96,24 @@ img {max-width: 100%}
   background-color: #00AFEF;
   position : fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 999;
-  width : 100%;
   box-shadow: 0 1px 2px rgba(46,85,163,.4);
+}
+.site-menu .gw  {
+  overflow: hidden;
+}
+.site-menu .left {
+  float: left;
+}
+.site-menu .right {
+  float: right;
 }
 .site-menu ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 .site-menu ul li {
   float: left;
@@ -135,6 +164,10 @@ img {max-width: 100%}
 }
 .callout.left:before {
   right: -.75em;
+}
+
+.reg-form {
+  margin: 5% auto;
 }
 
 /* Site Footer */
