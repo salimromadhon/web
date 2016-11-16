@@ -46,12 +46,14 @@ img {max-width: 100%}
 .site-header .slogan {
   color: white;
   text-shadow: 0 1px 2px black;
+  font-style: italic;
 }
 .site-header > div:first-child {
   margin-bottom: 5%;
 }
 .site-header .callout {
   background-color: black;
+  text-align: left;
 }
 
 
