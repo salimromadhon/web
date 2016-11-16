@@ -163,7 +163,9 @@ img {max-width: 100%}
 
 /* Rewrite */
 
-.pure-form input[type="text"] {
+.pure-form input[type="text"],
+.pure-form input[type="email"],
+.pure-form input[type="password"] {
   background-clip: padding-box;
   border-color: rgba(0,0,0,.2);
 }
