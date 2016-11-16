@@ -3,34 +3,46 @@
   <head>
     <title>CariHilang</title>
     <link rel="stylesheet" type="text/css" href="assets/css/pure.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/aos.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/aos-animations.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="assets/js/aos.js"></script>
   </head>
   <body>
     <div class="gap"></div>
     <div class="site-menu">
-      <ul class="gw">
-        <li><a class="active" href="#intro">Intro</a></li>
-        <li><a href="#carakerja">Cara Kerja</a></li>
-        <li><a href="#kontak">Bergabung</a></li>
-      </ul>
+      <div class="gw">
+        <ul class="left">
+          <li><a class="active" href="#intro">Intro</a></li>
+          <li><a href="#carakerja">Cara Kerja</a></li>
+          <li><a href="#kontak">Bergabung</a></li>
+        </ul>
+        <ul class="right">
+          <li><a href="#">Masuk</a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
     </div>
     <header class="site-header gw">
-      <a href="#"><img src="assets/images/logo-white.png" alt="logo"></a>
+      <a href="#"><img class="logo" src="assets/images/logo-white.png" alt="logo"></a>
+      <p class="slogan">Hilang? Cari bersama!</p>
+    <!--
       <ul class="site-nav">
         <li><a href="#">Daftar</a></li>
         <li><a href="#">Masuk</a></li>
       </ul>
       <div class="clear"></div>
+    -->
     </header>
     <div class="main-container">
 
       <div class="pure-g">
         <div class="pure-u-1-3">
-          <img src="assets/images/screen01.png" alt="screen-01">
+          <img src="assets/images/screen01.png" alt="screen-01" data-aos="flip-right">
         </div>
         <div class="pure-u-2-3">
-          <div class="callout right">
+          <div class="callout right" data-aos="flip-left">
             <h2>Temukan barang berharga Anda yang hilang dengan lebih cepat!</h2>
             <p>Terkadang barang berharga meskipun kita merasa sudah berhati-hati membawanya dapat terselip, tertinggal, sehingga hilang begitu saja.</p>
             <p>Sistem pelaporan yang mudah memungkinkan Anda melapor secepat mungkin jika sewaktu-waktu barang berharga Anda hilang.</p>
@@ -40,29 +52,29 @@
 
       <div class="pure-g">
         <div class="pure-u-1">
-          <p align="center" class="dimmer">Bagaimana caranya?</p>
+          <p align="center" class="dimmer" data-aos="fade"><strong>Bagaimana</strong> caranya?</p>
         </div>
       </div>
 
       <div class="pure-g">
         <div class="pure-u-2-3">
-          <div class="callout left">
+          <div class="callout left" data-aos="fade-right">
             <h2>Simpan data barang Anda di bagasi</h2>
             <p>Simpan data-data barang berharga Anda di Bagasi. Jangan khawatir, data Anda aman bersama kami.</p>
             <p>Simpan foto, data, dan ciri-ciri barang berharga Anda di Bagasi Anda.</p>
           </div>
         </div>
         <div class="pure-u-1-3">
-          <img src="assets/images/screen02.png" alt="screen-02">
+          <img src="assets/images/screen02.png" alt="screen-02" data-aos="fade-left">
         </div>
       </div>
 
       <div class="pure-g">
         <div class="pure-u-1-3">
-          <img src="assets/images/screen03.png" alt="screen-03">
+          <img src="assets/images/screen03.png" alt="screen-03" data-aos="fade-right">
         </div>
         <div class="pure-u-2-3">
-          <div class="callout right">
+          <div class="callout right" data-aos="fade-left">
             <h2>Laporkan Barang yang Hilang</h2>
             <p>saat barang anda hilang, anda cukup tambahkan kronologis kejadian dan tempat terjadi kehilangan, Share dan buat orang disekitar membantu menemukan.</p>
           </div>
@@ -71,44 +83,36 @@
 
       <div class="pure-g">
         <div class="pure-u-2-3">
-          <div class="callout left">
+          <div class="callout left" data-aos="fade-right">
             <h2>Pengguna terdekat otomatis akan mendapat notifikasi &lsquo;pop up&rsquo;</h2>
             <p>Pengguna terdekat dari lokasi kehilangan akan mendapat notifikasi di ponselnya sehingga mereka dapat mengembalikan barang berharga Anda apabila mereka melihatnya.</p>
             <p>Atau, bagaimana jika barang Anda dicuri? Sistem kami juga terhubung ke sistem pelacakan kepolisian sehingga pelacakan dapat ditangani dengan baik.</p>
           </div>
         </div>
         <div class="pure-u-1-3">
-          <img src="assets/images/screen04.png" alt="screen-04">
+          <img src="assets/images/screen04.png" alt="screen-04" data-aos="fade-left">
         </div>
       </div>
 
     </div> <!-- / .main-container -->
 
-    <div class="bottom-col">
-      <div class="pure-g gw">
-        <div class="pure-u-1-3">
-          <form class="pure-form">
+    <div class="bottom-col gw">
+      <p class="dimmer" align="center" data-aos="fade">
+        <strong>Daftar</strong> sekarang juga!
+      </p>
+      <form class="pure-form pure-u-1-3 block-center" data-aos="fade-up">
+        <fieldset class="pure-group">
+          <input type="text" class="pure-input-1" placeholder="Nama anda">
+        </fieldset>
 
-            <fieldset class="pure-group">
-              <input type="text" class="pure-input-1" placeholder="Nama anda">
-            </fieldset>
+        <fieldset class="pure-group">
+          <input type="text" class="pure-input-1" placeholder="Nama pengguna">
+          <input type="email" class="pure-input-1" placeholder="Surel">
+          <input type="text" class="pure-input-1" placeholder="Sandi">
+        </fieldset>
 
-            <fieldset class="pure-group">
-              <input type="text" class="pure-input-1" placeholder="Nama pengguna">
-              <input type="email" class="pure-input-1" placeholder="Surel">
-              <input type="text" class="pure-input-1" placeholder="Sandi">
-            </fieldset>
-
-            <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Daftar</button>
-          </form>
-        </div>
-
-        <div class="pure-u-2-3">
-          <p class="dimmer" align="right">
-            Daftar sekarang juga!
-          </p>
-        </div>
-      </div>
+        <button type="submit" class="pure-button pure-input-1 pure-button-primary">Daftar</button>
+      </form>
     </div>
     
     <footer class="site-footer">
@@ -143,6 +147,11 @@
       }
       window.addEventListener("resize", gapHeight);
       gapHeight();
+
+      AOS.init({
+        duration: 1200,
+        easing: 'ease-in-out-back'
+      });
     </script>
   </body>
 </html>
