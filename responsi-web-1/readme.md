@@ -12,4 +12,5 @@ Kami membuat desain awal melalui **Corel Draw** sebagai berikut.
 
 <img src="template.png" alt="template">
 
-Kami melakukan banyak perombakan dari konsep yang kami rancang sebelum memulai mengetikkan kode HTML satu-persatu dari awal.
+Kami melakukan banyak perombakan dalam merealisasikan halaman web sehingga tampilan di https://salimromadhon.github.io/web/responsi-web-1/
+bisa dikatakan menjadi sangat berbeda dari desain awal kami di atas.
